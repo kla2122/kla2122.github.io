@@ -1,5 +1,5 @@
 ---
-permalink: /research
+permalink: /research/
 layout: archive
 ---
 

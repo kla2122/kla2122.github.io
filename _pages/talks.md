@@ -1,5 +1,5 @@
 ---
-permalink: /talks
+permalink: /talks/
 layout: archive
 ---
 
