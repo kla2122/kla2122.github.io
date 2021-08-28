@@ -27,8 +27,35 @@ description: >- # this means to ignore newlines until "baseurl:"
   improve patient-centered care
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kla2122.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kl1four
-github_username:  kla2122
+repository: "kla2122/kla2122.github.io"
+
+# Social Sharing
+twitter:
+  username: &twitter kl1four
+
+# Site Author
+author:
+  name     : "Kyle Alford"
+  avatar   : "/assets/img/0m_adobespark.jpeg"
+  bio      :
+  "CS Student @Columbia."
+  "computational Bio intern @MSKCC"
+  location : "New York, NY"
+  employer :
+  googlescholar : "https://scholar.google.com/citations?hl=en&user=hoJZNoAAAAAJ&view_op=list_works&gmla=AJsN-F49gEmmGGn4n02NUknDY3yy7HMvkOByPOxLHF28alATMAZefsZ63cPx8gKwmT5eJ7Zz0kDDqBEv8ZRJhpGM-x6XHgRAjfDAwb2l0UgnJRpawsYMr3o"
+  email : "kla2122@columbia.edu"
+  github : "kla2122"
+  linkedin : "https://www.linkedin.com/in/klalford/"
+  twitter : "kl1four"
+  facebook :
+  instagram :
+  stackoverflow :
+  youtube :
+  wikipedia :
+  researchgate :
+
+
+
 
 # Fields minimal-mistakes uses, but are not defaulted with the jekyll new command.
 # Author is the default for posts, and is used in the footer.
@@ -37,6 +64,8 @@ name: Kyle Alford
 # Build settings
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -60,3 +89,68 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: talk
+      author_profile: false
+      comments: true
+      share: false
+  # _team
+  - scope:
+      path: ""
+      type: team
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: false
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: talk
+      author_profile: false
+      share: false
+      comment: true
+  # _contact
+  - scope:
+      path: ""
+      type: contact
+    values:
+      layout: talk
+      author_profile: true
+      share: false
+      comment: true
