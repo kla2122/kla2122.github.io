@@ -30,6 +30,10 @@ url: "http://kla2122.github.io/" # the base hostname & protocol for your site, e
 twitter_username: kl1four
 github_username:  kla2122
 
+# Fields minimal-mistakes uses, but are not defaulted with the jekyll new command.
+# Author is the default for posts, and is used in the footer.
+author: Kyle Alford
+
 # Build settings
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
