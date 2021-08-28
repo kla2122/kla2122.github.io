@@ -35,22 +35,41 @@ twitter:
 
 # Site Author
 author:
-  name     : "Kyle Alford"
-  avatar   : "/assets/img/0m_adobespark.jpeg"
-  bio      : "CS Student @Columbia. Computational Bio intern @MSKCC"
-  location : "New York, NY"
-  employer :
-  googlescholar : "https://scholar.google.com/citations?user=hoJZNoAAAAAJ&hl=en&oi=sra"
-  email : "kla2122@columbia.edu"
-  github : "kla2122"
-  linkedin : "https://www.linkedin.com/in/klalford/"
-  twitter : "kl1four"
-  facebook :
-  instagram :
-  stackoverflow :
-  youtube :
-  wikipedia :
-  researchgate :
+  name             : "Kyle Alford"
+  avatar           : "/assets/img/0m_adobespark.jpeg"
+  bio              : "CS Student @Columbia. Computational Bio intern @MSKCC"
+  location         : "New York, NY"
+  employer         : 
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=hoJZNoAAAAAJ&hl=en&oi=sra"
+  email            : "kla2122@columbia.edu"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "kla2122"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      :
+  lastfm           :
+  linkedin         : "klalford"
+  orcid            :
+  pinterest        :
+  researchgate     :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  tumblr           :
+  twitter          : "kl1four"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
 
 
