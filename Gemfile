@@ -15,6 +15,7 @@ gem "jekyll", "~> 4.2.0"
 # you can check these changes using the command
 #         bundle exec jekyll serve --livereload
 # gem "minima", "~> 2.5"
+# gem "minimal-mistakes-jekyll"
 gem "minimal-mistakes-jekyll"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
