@@ -70,6 +70,10 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  links:
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-github"
+      url: "https://scholar.google.com/citations?user=G567BHUAAAAJ&hl=en"
 
 
 
