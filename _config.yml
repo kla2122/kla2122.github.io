@@ -31,7 +31,7 @@ twitter_username: kl1four
 github_username:  kla2122
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 

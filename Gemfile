@@ -9,7 +9,14 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
+# This is the default theme, minima. To install a new jekyll theme,
+# comment the minima theme out, create a new line with gem 'new_theme'
+# then use the command bundle install. Then change the theme in _config
+# you can check these changes using the command
+#         bundle exec jekyll serve --livereload
+# gem "minima", "~> 2.5"
+gem "minimal-mistakes-jekyll"
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
