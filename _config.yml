@@ -11,27 +11,96 @@
 # If you need help with YAML syntax, here are some quick references for you: 
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
-title: Kyle L. Alford
-email: kla2122@columbia.edu
+# Theme Settings
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site settings
+locale: "en-US"
+title: "Kyle L. Alford"
+title_separator: "-"
+subtitle: # site tagline that appears below site title in masthead
+name: "Kyle Alford"
+email: "kla2122@columbia.edu"
 description: >- # this means to ignore newlines until "baseurl:"
   I'm currently an undergraduate student at Columbia University studying
   computational biology. I'm interested in the applications of CS and ML
   in medicine/biotech/healthcare and I'm passionate about using them to
   improve patient-centered care
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kla2122.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "kla2122/kla2122.github.io"
+url: "https://kla2122.github.io/"
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: "kla2122/kla2122.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs: false # true, false (default)
+words_per_minute: 200
+comments:
+  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+  utterances:
+    theme: # "github-light" (default), "github-dark"
+    issue_term: # "pathname" (default)
+  staticman:
+    branch: # "master"
+    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey:
+  secret:
+atom_feed:
+  path: # blank (default) uses feed.xml
+  hide: # true, false (default)
+search: # true
+search_full_content: # true
+search_provider: # algolia
+algolia:
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
+google:
+  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  instant_search: # false (default), true
+# SEO Related
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+naver_site_verification:
 
 # Social Sharing
 twitter:
-  username: &twitter kl1four
+  username: # &twitter kl1four
+facebook:
+  username:
+  app_id:
+  publisher:
+og_image: # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id:
+    anonymize_ip: # true, false (default)
 
 # Site Author
 author:
@@ -78,21 +147,9 @@ author:
     #   icon: "fab fa-fw fa-kaggle"
     #   url: "https://kaggle.com/kylelajuanalford"
 
-
-
-
-# Fields minimal-mistakes uses, but are not defaulted with the jekyll new command.
-# Author is the default for posts, and is used in the footer.
-name: Kyle Alford
-
-# Build settings
-# theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
+# Reading Files
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -102,18 +159,29 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-gist
+  - jekyll-sitemap
+
+# Defaults
 defaults:
   # _posts
   - scope:
