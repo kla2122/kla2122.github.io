@@ -1,6 +1,7 @@
 ---
 permalink: /projects/
 layout: archive
+title: "Projects"
 ---
 
 # Projects

@@ -1,6 +1,7 @@
 ---
 permalink: /research/
 layout: archive
+title: "Research"
 ---
 
 # Research

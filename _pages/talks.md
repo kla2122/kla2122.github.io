@@ -1,6 +1,7 @@
 ---
 permalink: /talks/
 layout: archive
+title: "Research"
 ---
 
 # Talks

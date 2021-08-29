@@ -1,6 +1,7 @@
 ---
 permalink: /publications/
 layout: archive
+title: "Publications"
 ---
 
 # Publications
