@@ -182,6 +182,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Defaults
 defaults:
