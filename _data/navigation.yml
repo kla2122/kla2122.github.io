@@ -5,7 +5,7 @@ main:
   - title: "About"
     url:  /about/
   - title: "CV"
-    url: /cv/
+    url: https://kla2122.github.io/files/kyle_alford_cv.pdf
   - title: "Projects"
     url: /projects/
   - title: "Publications"
