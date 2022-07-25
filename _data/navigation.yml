@@ -4,8 +4,8 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url:  /about/
-  - title: "CV"
-    url: https://kla2122.github.io/files/kyle_alford_cv.pdf
+  - title: "Resume"
+    url: https://kla2122.github.io/files/kyle_alford_resume.pdf
   - title: "Projects"
     url: /projects/
   - title: "Publications"
